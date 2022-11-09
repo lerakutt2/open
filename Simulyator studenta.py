@@ -2,6 +2,7 @@
 # идеи: купить препода, сделать случайные события(вы получили
 # автомат, у вас день рождения, выгорание), команда назад
 # сука похмелье не так работает
+# ядрена вошь почему none
 
 import random
 
@@ -26,10 +27,10 @@ def Luck(value):
 
 
 def Inp(v, ifnot, quest):
-    ans = input(MakeGray(quest))
+    ans = input(quest)
     while ans != str(v) and ans != str(v - 1) and ans != str(v - 2) and ans != str(v - 3) and ans != str(v - 4):
         print(ifnot)
-        ans = input(MakeGray(quest))
+        ans = input(quest)
     xyu = int(ans)
     return xyu
 
